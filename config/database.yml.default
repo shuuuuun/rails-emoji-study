@@ -10,7 +10,7 @@ common: &common
 #
 development:
   <<: *common
-  database: 'projectname_dev'
+  database: 'rails_emoji_study_dev'
   host:     'localhost'
   username: 'root'
 
@@ -19,6 +19,6 @@ development:
 #
 test:
   <<: *common
-  database: 'projectname_test'
+  database: 'rails_emoji_study_test'
   host:     'localhost'
   username: 'root'
