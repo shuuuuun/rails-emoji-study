@@ -1,0 +1,24 @@
+common: &common
+  adapter:  mysql2
+  encoding: utf8
+  port:     3306
+  pool:     5
+  timeout:  5000
+
+#
+# Development
+#
+development:
+  <<: *common
+  database: 'projectname_dev'
+  host:     'localhost'
+  username: 'root'
+
+#
+# Test
+#
+test:
+  <<: *common
+  database: 'projectname_test'
+  host:     'localhost'
+  username: 'root'

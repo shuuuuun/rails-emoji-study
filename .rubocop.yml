@@ -1,0 +1,60 @@
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+    - 'bin/**/*'
+    - 'spec/fixtures/**/*'
+    - 'db/migrate/*'
+    - 'db/schema.rb'
+
+Rails:
+  Enabled: true
+
+# 子Class/Moduleの指定方法
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# 行の長さの制限を80->120に変更
+Style/IfUnlessModifier:
+  MaxLineLength: 120
+Style/WhileUntilModifier:
+  MaxLineLength: 120
+Metrics/LineLength:
+  Max: 120
+
+# トップレベルクラスのドキュメテーションの必須を削除
+Style/Documentation:
+  Enabled: false
+
+# メソッドのSpaceを１文字のみにする制限を削除
+Style/SpaceBeforeFirstArg:
+  Enabled: false
+
+# メソッドの最大行数を10行から50行に変更
+Metrics/MethodLength:
+  Max: 50
+
+# Ascii文字以外でコメントを書く
+Style/AsciiComments:
+  Enabled: false
+
+# ブロックチェインは普通に使いたい
+Style/MultilineBlockChain:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 20
+
+Metrics/BlockLength:
+  Exclude:
+    - 'config/routes.rb'
+    - 'app/admin/*'
+
+Rails/Output:
+  Exclude:
+    - 'config/puma.rb'
+
+Bundler/OrderedGems:
+  Enabled: false

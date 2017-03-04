@@ -1,0 +1,37 @@
+# Ignore bundler files.
+/.bundle
+/vendor/bundle
+
+# Ignore vagrant files.
+*.vagrant
+Vagrantfile
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+!/tmp/cache/.keep
+!/tmp/pids/.keep
+!/tmp/sockets/.keep
+
+# Ignore Byebug command history file.
+.byebug_history
+
+# Ignore database settings.
+config/database.yml
+
+# Ignore env settings.
+.env
+
+# Ignore local config files.
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
+
+# Ignore upload files.
+/public/uploads/*
