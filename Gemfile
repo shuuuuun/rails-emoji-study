@@ -10,9 +10,9 @@ end
 gem 'rails', '~> 5.0.1'
 gem 'mysql2'
 gem 'puma', '~> 3.0'
-gem 'jbuilder', '~> 2.5'
 gem 'therubyracer', platforms: :ruby
 gem 'bcrypt', '~> 3.1.7'
+# gem 'jbuilder', '~> 2.5'
 
 # For .env
 gem 'dotenv-rails'
